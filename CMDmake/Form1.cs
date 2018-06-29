@@ -34,7 +34,7 @@ namespace CMDmake
 
             this.CmdCode.Add(AC.CmdCode);
 
-            //test
+
             this.Show();
 
 
