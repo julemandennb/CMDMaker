@@ -1,4 +1,3 @@
 # CMDMaker
-project make a cmd file
- to make cmd file Fast
+ to make cmd file Fast and easy for user
  
