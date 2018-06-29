@@ -13,13 +13,13 @@ namespace EnumClass
 
 
         /// <summary>
-        /// til at faer Description
+        /// to get description from Enum
         /// </summary>
-        /// <param name="FruitType"></param>
+        /// <param name="enumCmd"></param>
         /// <returns></returns>
-        public string GetDescriptionFromEnum(Enum FruitType)
+        public string GetDescriptionFromEnum(Enum enumCmd)
         {
-            FieldInfo fi = FruitType.GetType().GetField(FruitType.ToString());
+            FieldInfo fi = enumCmd.GetType().GetField(enumCmd.ToString());
             DescriptionAttribute[] attributes = (DescriptionAttribute[])fi.GetCustomAttributes(typeof(DescriptionAttribute), false);
             if (attributes.Length > 0)
             {
@@ -27,7 +27,7 @@ namespace EnumClass
             }
             else
             {
-                return FruitType.ToString();
+                return enumCmd.ToString();
             }
         }
     }

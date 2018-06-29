@@ -18,6 +18,8 @@ namespace CMDmake
 
         public dynamic CmdCode;
 
+        private enumCmd SELEnumCmd;
+
         public AddCmd()
         {
             InitializeComponent();
@@ -31,6 +33,7 @@ namespace CMDmake
             }
 
 
+
             dynamic MyDynamic = new ExpandoObject();
 
             MyDynamic.name = "hey";
@@ -38,6 +41,34 @@ namespace CMDmake
             MyDynamic.Code = enumCmd.Url;
 
             this.CmdCode = MyDynamic;
+        }
+
+        private void CMDCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.hideAllgroup();
+
+            int indx = this.CMDCombobox.SelectedIndex;
+
+            this.SELEnumCmd = (enumCmd)Enum.ToObject(typeof(enumCmd), (indx-1));
+
+            switch (this.SELEnumCmd)
+            {
+                case enumCmd.Url:
+                    this.groupUrl.Show();
+                    break;
+                case enumCmd.ping:
+                   
+                    break;
+
+            }
+
+
+
+        }
+
+        private void hideAllgroup()
+        {
+            this.groupUrl.Hide();
         }
     }
 }
