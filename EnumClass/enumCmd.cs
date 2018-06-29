@@ -11,8 +11,8 @@ namespace EnumClass
     {
         [Description("Url To webSide")]
         Url,
-        [Description("test")]
-        test
+        [Description("ping a WebSide")]
+        ping
 
 
 
