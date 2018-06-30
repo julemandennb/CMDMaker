@@ -30,8 +30,8 @@
         {
             this.CMDCombobox = new System.Windows.Forms.ComboBox();
             this.groupUrl = new System.Windows.Forms.GroupBox();
-            this.textBoxUrl = new System.Windows.Forms.TextBox();
             this.labelUrl = new System.Windows.Forms.Label();
+            this.textBoxUrl = new System.Windows.Forms.TextBox();
             this.groupUrl.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,7 +44,6 @@
             this.CMDCombobox.Name = "CMDCombobox";
             this.CMDCombobox.Size = new System.Drawing.Size(374, 21);
             this.CMDCombobox.TabIndex = 0;
-            this.CMDCombobox.SelectedIndex = 0;
             this.CMDCombobox.SelectedIndexChanged += new System.EventHandler(this.CMDCombobox_SelectedIndexChanged);
             // 
             // groupUrl
@@ -59,13 +58,6 @@
             this.groupUrl.TabStop = false;
             this.groupUrl.Visible = false;
             // 
-            // textBoxUrl
-            // 
-            this.textBoxUrl.Location = new System.Drawing.Point(94, 19);
-            this.textBoxUrl.Name = "textBoxUrl";
-            this.textBoxUrl.Size = new System.Drawing.Size(651, 20);
-            this.textBoxUrl.TabIndex = 0;
-            // 
             // labelUrl
             // 
             this.labelUrl.AutoSize = true;
@@ -74,6 +66,13 @@
             this.labelUrl.Size = new System.Drawing.Size(23, 13);
             this.labelUrl.TabIndex = 1;
             this.labelUrl.Text = "Url:";
+            // 
+            // textBoxUrl
+            // 
+            this.textBoxUrl.Location = new System.Drawing.Point(94, 19);
+            this.textBoxUrl.Name = "textBoxUrl";
+            this.textBoxUrl.Size = new System.Drawing.Size(651, 20);
+            this.textBoxUrl.TabIndex = 0;
             // 
             // AddCmd
             // 
@@ -84,6 +83,7 @@
             this.Controls.Add(this.CMDCombobox);
             this.Name = "AddCmd";
             this.Text = "AddCmd";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddCmd_FormClosed);
             this.groupUrl.ResumeLayout(false);
             this.groupUrl.PerformLayout();
             this.ResumeLayout(false);

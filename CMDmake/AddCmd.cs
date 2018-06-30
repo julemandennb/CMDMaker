@@ -31,17 +31,20 @@ namespace CMDmake
                 this.CMDCombobox.Items.Add(this.CE.GetDescriptionFromEnum(item));
 
             }
+            // to set CMDCombobox.SelectedIndex to 0
+            this.CMDCombobox.SelectedIndex = 0;
+            this.CmdCode = new ExpandoObject();
 
 
-            //test
-            dynamic MyDynamic = new ExpandoObject();
+            ////test
+            //dynamic MyDynamic = new ExpandoObject();
 
-            MyDynamic.name = "hey";
+            //MyDynamic.name = "hey";
 
-            MyDynamic.Code = enumCmd.Url;
+            //MyDynamic.Code = enumCmd.Url;
 
-            this.CmdCode = MyDynamic;
-            //test end here
+            //this.CmdCode = MyDynamic;
+            ////test end here
         }
 
         /// <summary>
@@ -63,7 +66,7 @@ namespace CMDmake
                     this.groupUrl.Show();
                     break;
                 case enumCmd.ping:
-                   
+                    this.groupUrl.Show();
                     break;
 
             }
@@ -78,6 +81,35 @@ namespace CMDmake
         private void hideAllgroup()
         {
             this.groupUrl.Hide();
+        }
+
+        private void AddCmd_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            try
+            {
+                this.CmdCode.nul = false;
+                if (this.SELEnumCmd == enumCmd.Url || this.SELEnumCmd == enumCmd.ping)
+                {
+
+                    this.CmdCode.name = this.CE.GetDescriptionFromEnum(this.SELEnumCmd);
+
+                    this.CmdCode.code = this.textBoxUrl.Text;
+
+
+                }
+                else
+                {
+                    this.CmdCode.nul = true;
+                }
+
+            }
+            catch(Exception exe)
+            {
+                this.CmdCode.nul = true;
+            }
+
+
+
         }
     }
 }

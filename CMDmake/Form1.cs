@@ -30,10 +30,14 @@ namespace CMDmake
 
             AC.ShowDialog();
 
-            this.cmdAddList.Items.Add(new { AC.CmdCode.name, AC.CmdCode.Code });
 
-            this.CmdCode.Add(AC.CmdCode);
+            if (AC.CmdCode.nul == false)
+            {
 
+                this.cmdAddList.Items.Add(new { AC.CmdCode.name, AC.CmdCode.code });
+
+                this.CmdCode.Add(AC.CmdCode);
+            }
 
             this.Show();
 
