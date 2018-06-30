@@ -24,7 +24,7 @@ namespace CMDmake
         {
             InitializeComponent();
 
-
+            // add all enum from enumCmd to CMDCombobox
             foreach (var item in Enum.GetValues(typeof(enumCmd)).Cast<enumCmd>())
             {
 
@@ -33,7 +33,7 @@ namespace CMDmake
             }
 
 
-
+            //test
             dynamic MyDynamic = new ExpandoObject();
 
             MyDynamic.name = "hey";
@@ -41,8 +41,14 @@ namespace CMDmake
             MyDynamic.Code = enumCmd.Url;
 
             this.CmdCode = MyDynamic;
+            //test end here
         }
 
+        /// <summary>
+        /// user Selected a new index check vise group to show
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CMDCombobox_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.hideAllgroup();
@@ -66,6 +72,9 @@ namespace CMDmake
 
         }
 
+        /// <summary>
+        /// hide all group
+        /// </summary>
         private void hideAllgroup()
         {
             this.groupUrl.Hide();
