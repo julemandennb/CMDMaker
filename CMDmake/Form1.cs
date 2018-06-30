@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CMDFileMaker;
 
 namespace CMDmake
 {
@@ -43,6 +44,19 @@ namespace CMDmake
 
 
 
+
+        }
+
+        private void buttonMaker_Click(object sender, EventArgs e)
+        {
+            if (this.CmdCode.Count > 0)
+            {
+                controller CT = new controller(this.CmdCode);
+            }
+            else
+            {
+                MessageBox.Show("No CMD code set");
+            }
 
         }
     }

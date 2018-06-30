@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMDmake", "CMDmake\CMDmake.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumClass", "EnumClass\EnumClass.csproj", "{9802D768-1195-48E4-A41E-1B9B57AAA2A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMDFileMaker", "CMDFileMaker\CMDFileMaker.csproj", "{2CFE1CEE-396E-4E74-9A3E-344F7167CD4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9802D768-1195-48E4-A41E-1B9B57AAA2A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9802D768-1195-48E4-A41E-1B9B57AAA2A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9802D768-1195-48E4-A41E-1B9B57AAA2A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CFE1CEE-396E-4E74-9A3E-344F7167CD4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CFE1CEE-396E-4E74-9A3E-344F7167CD4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CFE1CEE-396E-4E74-9A3E-344F7167CD4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CFE1CEE-396E-4E74-9A3E-344F7167CD4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

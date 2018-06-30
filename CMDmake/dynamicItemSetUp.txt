@@ -1,3 +1,4 @@
 name = enumCmd Description. important
+EnumCmd = Enum use has add to list. important
 code = to ping and url is name of host. important
 nul = if true user has set on none or error if false user have set on itme. important

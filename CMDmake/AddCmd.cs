@@ -95,7 +95,7 @@ namespace CMDmake
 
                     this.CmdCode.code = this.textBoxUrl.Text;
 
-
+                    this.CmdCode.EnumCmd = this.SELEnumCmd;
                 }
                 else
                 {

@@ -30,6 +30,7 @@
         {
             this.cmdAddList = new System.Windows.Forms.ListBox();
             this.AddCmd = new System.Windows.Forms.Button();
+            this.buttonMaker = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cmdAddList
@@ -42,7 +43,7 @@
             // 
             // AddCmd
             // 
-            this.AddCmd.Location = new System.Drawing.Point(481, 170);
+            this.AddCmd.Location = new System.Drawing.Point(451, 219);
             this.AddCmd.Name = "AddCmd";
             this.AddCmd.Size = new System.Drawing.Size(205, 152);
             this.AddCmd.TabIndex = 1;
@@ -50,11 +51,22 @@
             this.AddCmd.UseVisualStyleBackColor = true;
             this.AddCmd.Click += new System.EventHandler(this.AddCmd_Click);
             // 
+            // buttonMaker
+            // 
+            this.buttonMaker.Location = new System.Drawing.Point(722, 219);
+            this.buttonMaker.Name = "buttonMaker";
+            this.buttonMaker.Size = new System.Drawing.Size(205, 152);
+            this.buttonMaker.TabIndex = 2;
+            this.buttonMaker.Text = "Make Cmd";
+            this.buttonMaker.UseVisualStyleBackColor = true;
+            this.buttonMaker.Click += new System.EventHandler(this.buttonMaker_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1064, 747);
+            this.Controls.Add(this.buttonMaker);
             this.Controls.Add(this.AddCmd);
             this.Controls.Add(this.cmdAddList);
             this.Name = "Form1";
@@ -67,6 +79,7 @@
 
         private System.Windows.Forms.ListBox cmdAddList;
         private System.Windows.Forms.Button AddCmd;
+        private System.Windows.Forms.Button buttonMaker;
     }
 }
 
