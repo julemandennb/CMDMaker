@@ -11,12 +11,12 @@ namespace CMDFileMaker
     {
 
         private List<dynamic> CmdCode;
-        private string codeTOFile;
+        private List<string> codeTOFile;
 
         public controller(List<dynamic> CmdCode)
         {
             this.CmdCode = CmdCode;
-
+            this.codeTOFile = new List<string>();
 
 
 
@@ -25,10 +25,13 @@ namespace CMDFileMaker
                 if(itme.EnumCmd == enumCmd.Url)
                 {
                     UrlClass url = new UrlClass(itme.code);
-
+                    this.codeTOFile.Add(url.getCMDCode());
                 }
-                else if(itme.EnumCmd == enumCmd.Url)
+                else if(itme.EnumCmd == enumCmd.ping)
                 {
+
+                    PingClass ping = new PingClass(itme.code);
+                    this.codeTOFile.Add(ping.getCMDCode());
 
                 }
 
