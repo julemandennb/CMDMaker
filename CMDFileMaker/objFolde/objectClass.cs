@@ -7,7 +7,7 @@ using EnumClass;
 
 namespace CMDFileMaker.objFolde
 {
-    class objectClass
+   public class objectClass
     {
 
         private string Name;

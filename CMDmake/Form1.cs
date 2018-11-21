@@ -8,18 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CMDFileMaker;
+using CMDFileMaker.objFolde;
 
 namespace CMDmake
 {
     public partial class Form1 : Form
     {
-        private List<dynamic> CmdCode;
+        private List<objectClass> CmdCode;
 
         public Form1()
         {
             InitializeComponent();
 
-            this.CmdCode = new List<dynamic>();
+            this.CmdCode = new List<objectClass>();
         }
 
         private void AddCmd_Click(object sender, EventArgs e)
@@ -37,7 +38,8 @@ namespace CMDmake
 
                 this.cmdAddList.Items.Add(new { AC.CmdCode.name, AC.CmdCode.code });
 
-                this.CmdCode.Add(AC.CmdCode);
+
+                this.CmdCode.Add(new objectClass(AC.CmdCode.name,AC.CmdCode.EnumCmd, AC.CmdCode.code));
             }
 
             this.Show();
