@@ -44,6 +44,7 @@
     <Compile Include="controller.cs" />
     <Compile Include="CmdItem\PingClass.cs" />
     <Compile Include="FileMarker.cs" />
+    <Compile Include="objFolde\objectClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CmdItem\UrlClass.cs" />
   </ItemGroup>

@@ -103,7 +103,7 @@ namespace CMDmake
                 }
 
             }
-            catch(Exception exe)
+            catch
             {
                 this.CmdCode.nul = true;
             }
