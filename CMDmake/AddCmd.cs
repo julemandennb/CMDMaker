@@ -35,16 +35,6 @@ namespace CMDmake
             this.CMDCombobox.SelectedIndex = 0;
             this.CmdCode = new ExpandoObject();
 
-
-            ////test
-            //dynamic MyDynamic = new ExpandoObject();
-
-            //MyDynamic.name = "hey";
-
-            //MyDynamic.Code = enumCmd.Url;
-
-            //this.CmdCode = MyDynamic;
-            ////test end here
         }
 
         /// <summary>

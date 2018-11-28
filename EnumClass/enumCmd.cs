@@ -12,7 +12,9 @@ namespace EnumClass
         [Description("Url To webSide")]
         Url,
         [Description("ping a Host")]
-        ping
+        ping,
+        [Description("Restart You Pc")]
+        Restart
 
 
 
